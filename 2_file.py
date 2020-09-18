@@ -1,0 +1,8 @@
+f = open('referat.txt', 'r', encoding='utf-8')
+f2 = open('referat2.txt', 'w', encoding='utf-8')
+text=f.read()
+print(len(text))
+print(len(text.split()))
+f2.write(text.replace('.','!'))
+f.close()
+f2.close()
